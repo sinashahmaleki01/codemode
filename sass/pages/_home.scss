@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+/*
+--------------------|📝 : Main
+*/
+
+body {
+  main {
+    height: 100%;
+    grid-row: 1/2;
+    border-radius: 2rem;
+    background-color: $color-black-light-1;
+  }
+}

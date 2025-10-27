@@ -34,7 +34,16 @@ html {
 }
 
 body {
+  padding: 2rem 0 2rem 2rem;
+  @include grid(2) {
+    grid-template-columns: 1fr 8rem;
+  }
   box-sizing: border-box;
+  background-color: $color-black;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*

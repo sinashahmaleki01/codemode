@@ -13,10 +13,17 @@
     --------------------|📝 : Fonts
     -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
       rel="stylesheet"
     />
 
@@ -24,10 +31,14 @@
     --------------------|📝 : Icons
     -->
 
-    <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <!--
     --------------------|📝 : Css
@@ -39,19 +50,49 @@
     --------------------|📝 : Title
     -->
 
-    <title>Website name</title>
+    <title>CodeMode</title>
   </head>
 
   <body>
     <!--
-    --------------------|📝 : Header
+    --------------------|📝 : Aside
     -->
 
-    <header>
-      <h1 class="u-center-text u-margin-top-big">
-        Please run <code>npm i</code>
-      </h1>
-    </header>
+    <aside>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" data-text="صفحه اصلی">
+              <ion-icon name="home-outline"></ion-icon>
+            </a>
+            <span class="navigation__animation"></span>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" data-text="درباره ما">
+              <ion-icon name="help-outline"></ion-icon>
+            </a>
+            <span class="navigation__animation"></span>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" data-text="سرویس">
+              <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <span class="navigation__animation"></span>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" data-text="تماس با ما">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+            <span class="navigation__animation"></span>
+          </li>
+
+          <!-- <span class="navigation__animation"></span> -->
+        </ul>
+      </nav>
+    </aside>
 
     <!--
     --------------------|📝 : Main
@@ -63,6 +104,6 @@
     --------------------|📝 : Footer
     -->
 
-    <footer></footer>
+    <!-- <footer></footer> -->
   </body>
 </html>
