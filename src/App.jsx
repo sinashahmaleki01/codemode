@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-     <h1>welcome to the codemode</h1>
+     <h1>به کد مد خوش اومدین</h1>
     </>
   )
 }
