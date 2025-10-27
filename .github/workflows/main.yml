@@ -26,6 +26,6 @@ jobs:
           server: www.codemode.com
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          local-dir: dist
+          local-dir: dist/
           server-dir: /public_html/
 
