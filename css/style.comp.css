@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/*
+--------------------|📝 : Base 
+*/
+/*
+--------------------|📝 : Flex
+*/
+/*
+--------------------|📝 : Grid
+*/
+/*
+--------------------|📝 : Absolute position center
+*/
+/*
+--------------------|📝 : Media query manager
+*/
+/*
+----------|✏️ : 0 - 600 px : Phone
+--------------- 600 - 900 px : Tablet portrait
+--------------- 900 - 1200 px : Tablet landscape
+--------------- [1200 - 1800 px] is where our normal styles apply
+--------------- 1800px + : Big desktop
+*/
+/*
+----------|✏️ : $breakpoint argument choices =
+--------------- phone
+--------------- tab-port
+--------------- tab-land
+--------------- big-desktop
+*/
+/*
+--------------------|📝 : Colors
+*/
+/*
+--------------------|📝 : Reset
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*
+--------------------|📝 : Tag
+*/
+html {
+  font-size: 62.5%;
+}
+@media only screen and (min-width: 112em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  padding: 2rem 0 2rem 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 8rem;
+  box-sizing: border-box;
+  background-color: #101216;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*
+--------------------|📝 : Text selection
+*/
+::selection {
+  color: #2b90d9;
+}
+
+/*
+--------------------|📝 : Container
+*/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+body {
+  font-family: "Lalezar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+/*
+--------------------|📝 : Components 
+*/
+/*
+--------------------|📝 : Layout 
+*/
+/*
+--------------------|📝 : Aside
+*/
+aside {
+  height: calc(100vh - 4rem);
+}
+aside .navigation {
+  height: 100%;
+  padding: 1.2rem 0;
+  background-color: #1c1f27;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+aside .navigation .navigation__list {
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+aside .navigation .navigation__list .navigation__item {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside .navigation .navigation__list .navigation__item .navigation__link {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2rem;
+  color: #d9e1e8;
+  background-color: #282c37;
+  transition: scale 0.3s, background-color 0.3s;
+  border-radius: 1rem;
+}
+aside .navigation .navigation__list .navigation__item .navigation__link::after {
+  content: attr(data-text);
+  padding: 0.4rem 1rem;
+  position: absolute;
+  right: 6rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  background-color: #282c37;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 0.6rem 1.2rem -0.2rem, rgba(0, 0, 0, 0.3) 0 0.3rem 0.7rem -0.3rem;
+  transition: opacity 0.25s ease 0.05s, visibility 0.25s ease 0.05s;
+  opacity: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+aside .navigation .navigation__list .navigation__item .navigation__link::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: 5.5rem;
+  border-style: solid;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+  border-color: transparent transparent transparent #282c37;
+  transform: rotate(0deg);
+  transition: opacity 0.25s ease 0.05s, visibility 0.25s ease 0.05s;
+  opacity: 0;
+  visibility: hidden;
+}
+aside .navigation .navigation__list .navigation__item .navigation__link:hover {
+  background-color: #2b90d9;
+  scale: 1.1;
+}
+aside .navigation .navigation__list .navigation__item .navigation__link:hover::after, aside .navigation .navigation__list .navigation__item .navigation__link:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+aside .navigation .navigation__list .navigation__item .navigation__link:hover ~ .navigation__animation {
+  height: 4rem;
+}
+aside .navigation .navigation__list .navigation__item .navigation__animation {
+  width: 0.4rem;
+  height: 0.8rem;
+  position: absolute;
+  right: 0;
+  background-color: #d9e1e8;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  transition: height 0.3s;
+}
+
+/*
+--------------------|📝 : Pages 
+*/
+/*
+--------------------|📝 : Main
+*/
+body main {
+  height: 100%;
+  grid-row: 1/2;
+  border-radius: 2rem;
+  background-color: #1c1f27;
+}
+
+/*# sourceMappingURL=style.comp.css.map */
