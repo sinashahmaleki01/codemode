@@ -22,11 +22,11 @@ jobs:
 
       - name: 🌐 Check server connection
         run: |
-          echo "Checking DNS for www.codemode.com..."
-          nslookup www.codemode.com
+          echo "Checking DNS for www.thecodemode.com..."
+          nslookup www.thecodemode.com
 
           echo "Pinging server..."
-          ping -c 4 www.codemode.com
+          ping -c 4 www.thecodemode.com
 
       - name: 📂 Deploy dist folder to FTP
         uses: Penguibird/FTP-Deploy-Action@4.2.0
