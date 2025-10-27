@@ -31,7 +31,7 @@ jobs:
       - name: 📂 Deploy dist folder to FTP
         uses: Penguibird/FTP-Deploy-Action@4.2.0
         with:
-          server: www.codemode.com
+          server: www.thecodemode.com
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           local-dir: dist/
