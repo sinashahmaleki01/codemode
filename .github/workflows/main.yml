@@ -1,32 +1,42 @@
-name: 🚀 Deploy Website to thecodemode.com via FTP
-
 on:
   push:
     branches:
       - main
 
+name: 🚀 Deploy React (Vite) App on push
+
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout code
-        uses: actions/checkout@v3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
 
-      - name: 🧰 Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: ⚙️ Install dependencies
+      - name: 🧰 Install dependencies
         run: npm install
 
       - name: 🏗️ Build project
         run: npm run build
 
-      - name: 🚀 Deploy to cPanel via FTP
+      - name: 🌐 Check DNS
         run: |
-          sudo apt-get install -y lftp
-          lftp -c "open -u ${{ secrets.ftp_username }},${{ secrets.ftp_password }} ftp.thecodemode.com;
-          set ssl:verify-certificate no;
-          mirror -R dist/ public_html/ --delete --verbose"
+          echo "Checking DNS for www.thecodemode.com..."
+          nslookup www.thecodemode.com
+
+      - name: 📂 Deploy dist folder to FTP (with retry)
+        run: |
+          n=0
+          until [ $n -ge 3 ]
+          do
+            n=$((n+1))
+            echo "Attempt $n to deploy..."
+            npx ftp-deploy --server www.thecodemode.com \
+                           --username "${{ secrets.ftp_username }}" \
+                           --password "${{ secrets.ftp_password }}" \
+                           --local-dir dist/ \
+                           --server-dir /public_html/ && break
+            echo "⚠️ Deployment failed. Retrying in 10 seconds..."
+            sleep 10
+          done
