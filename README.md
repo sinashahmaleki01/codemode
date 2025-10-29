@@ -6,8 +6,7 @@ CodeMode is a website created for the CodeMode team.
 
 ## Technologies Used
 
-- **HTML**
-- **CSS**
+- **React**
 - **Sass**
 - **Git**
 
