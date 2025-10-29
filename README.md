@@ -1,16 +1,30 @@
-# React + Vite
+# CodeMode
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+CodeMode is a website created for the CodeMode team.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## React Compiler
+- **HTML**
+- **CSS**
+- **Sass**
+- **Git**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Architecture
 
-## Expanding the ESLint configuration
+- **BEM** – Block Element Modifier naming convention for CSS classes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **7-1 Architecture** – Sass folder structure for organized styles
+
+### CSS Guidelines
+
+- **Font Sizes (px):** 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- **Spacing System (px):** 2 / 4 / 6 / 8 / 10 / 12 / 16 / 20 /24 / 32 / 40 / 48 / 60 / 64 / 80 / 96 / 100 / 128
+
+- **Border Radius (px):** 4 / 6 / 10 / 20 / —
+
+- **Line Height:** — / — / — / —
+
+- **Letter Spacing:** — / — / — / —

@@ -1,0 +1,26 @@
+/*
+--------------------|📝 : Base 
+*/
+
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
+
+/*
+--------------------|📝 : Components 
+*/
+
+@use "components/ParticlesBackground";
+@use "components/Button";
+
+/*
+--------------------|📝 : Layout 
+*/
+
+@use "layout/aside";
+
+/*
+--------------------|📝 : Pages 
+*/
+
+@use "pages/home";
