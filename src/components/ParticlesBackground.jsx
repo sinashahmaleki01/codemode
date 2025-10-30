@@ -42,7 +42,7 @@ function ParticlesBackground() {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 160,
             duration: 0.4,
           },
         },

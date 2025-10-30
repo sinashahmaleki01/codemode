@@ -39,7 +39,7 @@ function Navigation() {
               className="navigation__link"
               data-text={item.text}
             >
-              <img width="22" height="22" src={item.icon} alt="icon" />
+              <img src={item.icon} alt="icon" />
             </a>
             <span className="navigation__animation"></span>
           </li>
