@@ -37,10 +37,17 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
 p,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 button {
   direction: rtl;
 }
@@ -53,17 +60,3 @@ button {
   color: $color-primary;
 }
 
-/*
---------------------|📝 : App
-*/
-
-.app {
-  height: 100vh;
-  padding: 2rem 2rem 2rem 0;
-  @include grid(2) {
-    grid-template-columns: 8rem 1fr;
-  }
-  overflow: hidden;
-  box-sizing: border-box;
-  background-color: $color-black;
-}

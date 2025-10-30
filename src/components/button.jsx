@@ -1,7 +1,11 @@
 //--------------------|📝 : Button
 
 function Button({ children }) {
-  return <button>{children}</button>;
+  return (
+    <button>
+      <p>{children}</p>
+    </button>
+  );
 }
 
 export default Button;

@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+/*
+--------------------|📝 : Hero section
+*/
+
+.hero-section {
+  height: 100%;
+  @include flex(0, center, center);
+  position: relative;
+
+  .hero-section__text {
+    @include flex(2.4, center, center, column);
+    z-index: 1;
+
+    .u-title-one,
+    .u-paragraph {
+      text-shadow: 0.8rem 0.4rem 0.2rem $color-black;
+    }
+  }
+}

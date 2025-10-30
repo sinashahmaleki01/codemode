@@ -42,7 +42,7 @@ function ParticlesBackground() {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 160,
             duration: 0.4,
           },
         },
@@ -72,7 +72,7 @@ function ParticlesBackground() {
           density: {
             enable: true,
           },
-          value: 160,
+          value: 300,
         },
         opacity: {
           value: 0.5,
