@@ -1,0 +1,105 @@
+@use "../abstracts/" as *;
+
+/*
+--------------------|📝 : SocialBox 
+*/
+
+.social-box {
+  @include flex(1, center, center, column);
+
+  &__link-list {
+    @include flex(0, center, center, column);
+    position: relative;
+    border-radius: 0.6rem;
+    background-color: $color-white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0.2rem 0.6rem;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -0.6rem;
+      border-style: solid;
+      border-width: 0 0.8rem 0.8rem 0.8rem;
+      border-color: transparent transparent $color-white transparent;
+    }
+
+    &:hover .social-box__link {
+      filter: blur(0.2rem);
+    }
+
+    .social-box__link {
+      padding: 0.6rem;
+      transition: filter 0.2s ease;
+
+      &:hover {
+        filter: blur(0);
+      }
+
+      a {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    perspective: 80rem;
+  }
+
+  &__cube {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform-style: preserve-3d;
+    animation: rotateCube 3.8s infinite linear;
+  }
+
+  &__side {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    @include flex(0, center, center);
+    background-color: $color-white;
+    border: 0.1rem solid $color-black-light-2;
+    transition: all 0.3s;
+
+    &:active {
+      background-color: $color-black-light-2;
+      opacity: 0.8;
+    }
+
+    &--front {
+      transform: translateZ(1rem);
+    }
+    &--back {
+      transform: rotateY(180deg) translateZ(1rem);
+    }
+    &--left {
+      transform: rotateY(-90deg) translateZ(1rem);
+    }
+    &--right {
+      transform: rotateY(90deg) translateZ(1rem);
+    }
+    &--top {
+      transform: rotateX(90deg) translateZ(1rem);
+    }
+    &--bottom {
+      transform: rotateX(-90deg) translateZ(1rem);
+    }
+  }
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

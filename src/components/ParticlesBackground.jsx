@@ -72,7 +72,7 @@ function ParticlesBackground() {
           density: {
             enable: true,
           },
-          value: 160,
+          value: 300,
         },
         opacity: {
           value: 0.5,
