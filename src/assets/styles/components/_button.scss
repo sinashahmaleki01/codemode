@@ -4,7 +4,7 @@
 --------------------|📝 : Button
 */
 
-button {
+.btn {
   width: 12rem;
   height: 6rem;
   @include flex(0, center, center);
@@ -12,6 +12,7 @@ button {
   background: transparent;
   border: 0.1rem solid $color-gray;
   border-radius: 1rem;
+  text-decoration: none;
   box-shadow: inset 0 0 1rem $color-gray;
   cursor: pointer;
 
@@ -67,7 +68,9 @@ button {
     font-family: "Lalezar", sans-serif;
     font-size: 1.8rem;
     font-weight: 900;
+    text-align: center;
     color: $color-white;
+    text-decoration: none;
     filter: blur(0.02em);
     z-index: 5;
   }

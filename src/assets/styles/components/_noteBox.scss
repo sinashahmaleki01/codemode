@@ -1,0 +1,84 @@
+@use "../abstracts/" as *;
+
+/*
+--------------------|📝 : Note box
+*/
+
+.note-box {
+  @include grid(8, 3) {
+    justify-items: center;
+  }
+
+  &__note {
+    width: 28rem;
+    height: 32rem;
+    padding: 2rem;
+    position: relative;
+    background-color: $color-white;
+    box-shadow: 0.6rem 0.6rem 0.8rem $color-black-light-2;
+    border-radius: 1rem;
+    transition: transform 0.2s;
+    will-change: transform;
+
+    &::after {
+      content: "";
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      top: -1.2rem;
+      background-image: url(../../public/pin.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:nth-child(odd) {
+      transform: rotate(-4deg);
+
+      &::after {
+        left: -1rem;
+        transform: scaleX(-1);
+      }
+    }
+
+    &:nth-child(even) {
+      transform: rotate(4deg);
+
+      &::after {
+        right: -1rem;
+      }
+    }
+
+    &:nth-child(3n) {
+      transform: rotate(-4deg);
+
+      &::after {
+        left: -1rem;
+        transform: scaleX(-1);
+      }
+    }
+
+    &:nth-child(5n) {
+      transform: rotate(-6deg);
+
+      &::after {
+        right: -1rem;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.08) rotate(0);
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      color: $color-black;
+    }
+
+    p {
+      font-size: 2rem;
+      color: $color-black-light-1;
+    }
+  }
+}

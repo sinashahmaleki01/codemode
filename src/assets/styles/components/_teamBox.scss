@@ -1,0 +1,79 @@
+@use "../abstracts/" as *;
+
+/*
+--------------------|📝 : Team box
+*/
+
+.team-box {
+  @include flex(0, center, space-around);
+
+  &__member {
+    width: 24rem;
+    padding: 2rem;
+    @include flex(0, center, space-between);
+    background-color: $color-white;
+    box-shadow: 0.6rem 0.6rem 0.8rem $color-black-light-2;
+    border-radius: 1rem;
+    border: 0.4rem solid $color-white;
+    transition: border 0.3s;
+
+    &:hover {
+      border-color: $color-primary;
+
+      > img {
+        scale: 1.1;
+        border-color: $color-primary;
+      }
+    }
+
+    > img {
+      width: 10rem;
+      height: 10rem;
+      margin-left: -6rem;
+      background-color: $color-white;
+      border-radius: 100%;
+      border-left: 0.4rem solid $color-white;
+      transition: all 0.3s;
+    }
+
+    div {
+      @include flex(1, flex-end, space-between, column);
+
+      p {
+        position: relative;
+        font-size: 2.4rem;
+        color: $color-black;
+
+        &::after {
+          content: "";
+          width: 50%;
+          height: 0.2rem;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: $color-primary;
+        }
+      }
+
+      h3 {
+        font-size: 1.6rem;
+        color: $color-black-light-1;
+      }
+
+      a {
+        margin-top: 1rem;
+
+        &:hover img {
+          transform: scale(1.4);
+        }
+
+        img {
+          width: 3rem;
+          height: 3rem;
+          padding: 0.4rem;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}

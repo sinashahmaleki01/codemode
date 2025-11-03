@@ -11,6 +11,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.35) 0 0.5rem 1.5rem;
   overflow-y: scroll;
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     width: 2rem;
@@ -33,6 +34,21 @@ main {
   }
 
   section {
-    padding: 2rem;
+    padding: 12rem 2rem 6rem;
+  }
+
+  .contact-us {
+    &__content {
+      @include flex(10, center, center);
+      p {
+        font-size: 2.2rem;
+        color: $color-white;
+
+        a {
+          font-size: 3rem;
+          color: $color-primary;
+        }
+      }
+    }
   }
 }
