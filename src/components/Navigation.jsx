@@ -2,22 +2,22 @@
 
 const navItems = [
   {
-    icon: "../../public/home.webp",
+    icon: "/home.webp",
     text: "خانه",
     href: "#home",
   },
   {
-    icon: "../../public/about.webp",
+    icon: "/about.webp",
     text: "درباره ما",
     href: "#about",
   },
   {
-    icon: "../../public/team.webp",
+    icon: "/team.webp",
     text: "تیم ما",
     href: "#team",
   },
   {
-    icon: "../../public/phone.webp",
+    icon: "/phone.webp",
     text: "تماس با ما",
     href: "#contact",
   },
