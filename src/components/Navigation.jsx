@@ -12,12 +12,12 @@ const navItems = [
     href: "#about",
   },
   {
-    icon: "/public/team.webp",
+    icon: "/team.webp",
     text: "تیم ما",
     href: "#team",
   },
   {
-    icon: "/public/phone.webp",
+    icon: "/phone.webp",
     text: "تماس با ما",
     href: "#contact",
   },
