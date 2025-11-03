@@ -4,19 +4,19 @@
 
 const socialItems = [
   {
-    icon: "../../public/github-22.webp",
+    icon: "/github-22.webp",
     href: "https://github.com/sinashahmaleki01/codemode",
   },
   {
-    icon: "../../public/linkedin.webp",
+    icon: "/linkedin.webp",
     href: "#",
   },
   {
-    icon: "../../public/instagram.webp",
+    icon: "/instagram.webp",
     href: "#",
   },
   {
-    icon: "../../public/telegram.webp",
+    icon: "/telegram.webp",
     href: "https://t.me/SinaShahmaleki",
   },
 ];
@@ -30,7 +30,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="../../public/share.webp"
+              src="/share.webp"
               alt="share"
             />
           </div>
@@ -38,7 +38,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="../../public/share.webp"
+              src="/share.webp"
               alt="share"
             />
           </div>
@@ -46,7 +46,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="../../public/share.webp"
+              src="/share.webp"
               alt="share"
             />
           </div>
@@ -54,7 +54,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="../../public/share.webp"
+              src="/share.webp"
               alt="share"
             />
           </div>
@@ -62,7 +62,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="../../public/share.webp"
+              src="/share.webp"
               alt="share"
             />
           </div>
@@ -70,7 +70,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="../../public/share.webp"
+              src="/share.webp"
               alt="share"
             />
           </div>

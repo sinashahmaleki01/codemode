@@ -6,21 +6,21 @@ const teamData = [
         id: 3,
         name: "سید امیرحسین امین",
         role: "فرانت اند",
-        image: "../../public/frontend.webp",
+        image: "/frontend.webp",
         links: { github: { url: "https://github.com/AmirhoseinAmin", icon: "../../public/github-40.webp" } }
     },
     {
         id: 2,
         name: "سینا شاه ملکی",
         role: "بک اند",
-        image: "../../public/backend.webp",
+        image: "/backend.webp",
         links: { github: { url: "https://github.com/sinashahmaleki01", icon: "../../public/github-40.webp" } }
     },
     {
         id: 1,
         name: "مهدیه گودرزی",
         role: "هوش مصنوعی",
-        image: "../../public/ai.webp",
+        image: "/ai.webp",
         links: { github: { url: "https://github.com/", icon: "../../public/github-40.webp" } }
     }
 ];
