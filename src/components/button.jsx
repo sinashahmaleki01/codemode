@@ -3,7 +3,7 @@
 function Button({ children }) {
   return (
     <button>
-      <p>{children}</p>
+      <a href="#about">{children}</a>
     </button>
   );
 }

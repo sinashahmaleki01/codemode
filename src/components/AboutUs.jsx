@@ -7,7 +7,7 @@ import SectionHeader from "./SectionHeader";
 
 function AboutUs() {
   return (
-    <section className="about-us">
+    <section id="about" className="about-us">
       <SectionHeader>درباره ما</SectionHeader>
       <NoteBox />
     </section>

@@ -7,7 +7,7 @@ import ParticlesBackground from "../components/ParticlesBackground";
 
 function HeroSection() {
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <ParticlesBackground />
       <div className="hero-section__text">
         <h1 className="u-title-one">به کد مد خوش اومدی</h1>

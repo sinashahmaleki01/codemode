@@ -4,20 +4,20 @@
 
 const socialItems = [
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/282c37/github.png",
+    icon: "../../public/github-22.webp",
+    href: "https://github.com/sinashahmaleki01/codemode",
+  },
+  {
+    icon: "../../public/linkedin.webp",
     href: "#",
   },
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/282c37/linkedin.png",
+    icon: "../../public/instagram.webp",
     href: "#",
   },
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/282c37/instagram-new.png",
-    href: "#",
-  },
-  {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/282c37/telegram-app.png",
-    href: "#",
+    icon: "../../public/telegram.webp",
+    href: "https://t.me/SinaShahmaleki",
   },
 ];
 
@@ -30,7 +30,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="https://img.icons8.com/fluency-systems-filled/10/282c37/share.png"
+              src="../../public/share.webp"
               alt="share"
             />
           </div>
@@ -38,7 +38,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="https://img.icons8.com/fluency-systems-filled/10/282c37/share.png"
+              src="../../public/share.webp"
               alt="share"
             />
           </div>
@@ -46,7 +46,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="https://img.icons8.com/fluency-systems-filled/10/282c37/share.png"
+              src="../../public/share.webp"
               alt="share"
             />
           </div>
@@ -54,7 +54,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="https://img.icons8.com/fluency-systems-filled/10/282c37/share.png"
+              src="../../public/share.webp"
               alt="share"
             />
           </div>
@@ -62,7 +62,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="https://img.icons8.com/fluency-systems-filled/10/282c37/share.png"
+              src="../../public/share.webp"
               alt="share"
             />
           </div>
@@ -70,7 +70,7 @@ function SocialBox() {
             <img
               width="10"
               height="10"
-              src="https://img.icons8.com/fluency-systems-filled/10/282c37/share.png"
+              src="../../public/share.webp"
               alt="share"
             />
           </div>

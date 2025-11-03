@@ -2,29 +2,24 @@
 
 const navItems = [
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/d9e1e8/home.png",
+    icon: "../../public/home.webp",
     text: "خانه",
-    href: "#",
+    href: "#home",
   },
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/d9e1e8/about.png",
+    icon: "../../public/about.webp",
     text: "درباره ما",
-    href: "#",
+    href: "#about",
   },
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/d9e1e8/maintenance.png",
-    text: "سرویس",
-    href: "#",
-  },
-  {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/d9e1e8/conference-call.png",
+    icon: "../../public/team.webp",
     text: "تیم ما",
-    href: "#",
+    href: "#team",
   },
   {
-    icon: "https://img.icons8.com/fluency-systems-filled/22/d9e1e8/phone-disconnected.png",
+    icon: "../../public/phone.webp",
     text: "تماس با ما",
-    href: "#",
+    href: "#contact",
   },
 ];
 

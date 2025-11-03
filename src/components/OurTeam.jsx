@@ -7,7 +7,7 @@ import TeamBox from "./TeamBox";
 
 function OurTeam() {
     return (
-        <section className="our-team">
+        <section id="team" className="our-team">
             <SectionHeader>تیم ما</SectionHeader>
             <TeamBox />
         </section>

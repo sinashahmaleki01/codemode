@@ -23,7 +23,7 @@ button {
       animation: light 1s ease-in-out forwards;
     }
 
-    p {
+    a {
       animation: lightText 1s ease-in-out forwards;
     }
   }
@@ -60,7 +60,7 @@ button {
     pointer-events: none;
   }
 
-  p {
+  a {
     display: inline-block;
     width: 12rem;
     line-height: 6rem;
@@ -68,6 +68,7 @@ button {
     font-size: 1.8rem;
     font-weight: 900;
     color: $color-white;
+    text-decoration: none;
     filter: blur(0.02em);
     z-index: 5;
   }
