@@ -2,9 +2,9 @@
 
 function Button({ children }) {
   return (
-    <button>
-      <a href="#about">{children}</a>
-    </button>
+    <a href="#about" className="btn">
+      <p>{children}</p>
+    </a>
   );
 }
 

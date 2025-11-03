@@ -6,22 +6,22 @@ const teamData = [
         id: 3,
         name: "سید امیرحسین امین",
         role: "فرانت اند",
-        image: "https://img.icons8.com/clouds/100/code.png",
-        links: { github: { url: "https://github.com/AmirhoseinAmin", icon: "https://img.icons8.com/fluency-systems-filled/40/282c37/github.png" } }
+        image: "../../public/frontend.webp",
+        links: { github: { url: "https://github.com/AmirhoseinAmin", icon: "../../public/github-40.webp" } }
     },
     {
         id: 2,
         name: "سینا شاه ملکی",
         role: "بک اند",
-        image: "https://img.icons8.com/clouds/100/programming--v1.png",
-        links: { github: { url: "https://github.com/sinashahmaleki01", icon: "https://img.icons8.com/fluency-systems-filled/40/282c37/github.png" } }
+        image: "../../public/backend.webp",
+        links: { github: { url: "https://github.com/sinashahmaleki01", icon: "../../public/github-40.webp" } }
     },
     {
         id: 1,
         name: "مهدیه گودرزی",
         role: "هوش مصنوعی",
-        image: "https://img.icons8.com/clouds/100/adobe-illustrator.png",
-        links: { github: { url: "https://github.com/", icon: "https://img.icons8.com/fluency-systems-filled/40/282c37/github.png" } }
+        image: "../../public/ai.webp",
+        links: { github: { url: "https://github.com/", icon: "../../public/github-40.webp" } }
     }
 ];
 
