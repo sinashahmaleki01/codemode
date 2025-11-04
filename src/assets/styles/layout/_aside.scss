@@ -8,25 +8,24 @@ aside {
   height: calc(100vh - 4rem);
   padding: 2rem 0;
   @include flex(0, center, space-between, column);
+  background-color: $color-black-light-1;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0.6rem 1.6rem;
 
   @include respond(phone) {
     width: calc(100% - 2rem);
     height: 8rem;
-    margin: 0 auto;
     padding: 0 2rem;
     @include flex(0, center, space-between, row);
-    position: absolute;
-    bottom: 1rem;
-    z-index: 99;
+    position: fixed;
+    bottom: 2rem;
+    z-index: 2;
+    justify-self: center;
 
     .social-box {
       display: none;
     }
   }
-
-  background-color: $color-black-light-1;
-  border-radius: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 0.6rem 1.6rem;
 
   .site-version {
     font-size: 1.2rem;
