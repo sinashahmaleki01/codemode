@@ -5,11 +5,16 @@
 */
 
 .navigation {
+  @include respond(phone) {
+    width: 100%;
+    @include flex(3, center, center, row);
+  }
+
   .navigation__list {
     @include flex(1.6, center, center, column);
 
     @include respond(phone) {
-      @include flex(1.6, center, center, row);
+      @include flex(3, center, center, row);
     }
 
     .navigation__item {

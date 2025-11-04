@@ -8,6 +8,7 @@
   height: 100%;
   @include flex(0, center, center);
   position: relative;
+  text-align: center;
 
   .hero-section__text {
     @include flex(2.4, center, center, column);

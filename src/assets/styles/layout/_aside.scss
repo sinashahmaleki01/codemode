@@ -10,9 +10,18 @@ aside {
   @include flex(0, center, space-between, column);
 
   @include respond(phone) {
-    height: auto;
+    width: calc(100% - 2rem);
+    height: 8rem;
+    margin: 0 auto;
     padding: 0 2rem;
     @include flex(0, center, space-between, row);
+    position: absolute;
+    bottom: 1rem;
+    z-index: 99;
+
+    .social-box {
+      display: none;
+    }
   }
 
   background-color: $color-black-light-1;

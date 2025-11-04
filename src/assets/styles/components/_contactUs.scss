@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+/*
+--------------------|📝 : Contact us
+*/
+
+.contact-us {
+  &__content {
+    @include flex(10, center, center);
+
+    @include respond(tab-port) {
+      @include flex(8, center, center, column);
+    }
+
+    p {
+      font-size: 2.2rem;
+      color: $color-white;
+      text-align: center;
+
+      a {
+        font-size: 3rem;
+        color: $color-primary;
+      }
+    }
+  }
+}
