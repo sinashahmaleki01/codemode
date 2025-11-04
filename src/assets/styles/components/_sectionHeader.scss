@@ -11,6 +11,10 @@
   &__title {
     font-size: 4.4rem;
     color: $color-white;
+
+    @include respond(phone) {
+      font-size: 3.6rem;
+    }
   }
 
   &__animation-box {

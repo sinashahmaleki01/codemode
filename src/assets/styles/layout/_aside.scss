@@ -8,6 +8,13 @@ aside {
   height: calc(100vh - 4rem);
   padding: 2rem 0;
   @include flex(0, center, space-between, column);
+
+  @include respond(phone) {
+    height: auto;
+    padding: 0 2rem;
+    @include flex(0, center, space-between, row);
+  }
+
   background-color: $color-black-light-1;
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0 0.6rem 1.6rem;

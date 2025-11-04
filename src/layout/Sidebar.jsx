@@ -8,7 +8,6 @@ function Sidebar() {
     <aside>
       <Navigation />
       <SocialBox />
-      <p className="site-version">V 1.0.0</p>
     </aside>
   );
 }
