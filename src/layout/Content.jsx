@@ -2,6 +2,7 @@
 
 import AboutUs from "../components/AboutUs";
 import ContactUs from "../components/ContactUs";
+import CopyRight from "../components/Copyright";
 import HeroSection from "../components/HeroSection";
 import OurTeam from "../components/OurTeam";
 
@@ -14,6 +15,7 @@ function Content() {
       <AboutUs />
       <OurTeam />
       <ContactUs />
+      <CopyRight />
     </main>
   );
 }

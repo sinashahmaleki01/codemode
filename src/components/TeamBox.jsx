@@ -21,7 +21,7 @@ const teamData = [
         name: "مهدیه گودرزی",
         role: "هوش مصنوعی",
         image: "/ai.webp",
-        links: { github: { url: "https://github.com/", icon: "/github-40.webp" } }
+        links: { github: { url: "https://github.com/mahdiehgoodarzi", icon: "/github-40.webp" } }
     }
 ];
 
