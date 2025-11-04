@@ -10,8 +10,8 @@ function HeroSection() {
     <section id="home" className="hero-section">
       <ParticlesBackground />
       <div className="hero-section__text">
-        <h1 className="u-title-one">به کد مد خوش اومدی</h1>
-        <p className="u-paragraph">تیم کد مد تورو به هدفت می رسونه!</p>
+        <h1 className="u-title-one">به کُد مود خوش اومدی</h1>
+        <p className="u-paragraph">تیم کُد مود تورو به هدفت می رسونه!</p>
         <Button>شروع</Button>
       </div>
     </section>

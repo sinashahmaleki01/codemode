@@ -9,6 +9,20 @@
     justify-items: center;
   }
 
+  @include respond(tab-land) {
+    @include grid(8, 2);
+  }
+
+  @include respond(phone) {
+    @include grid(8, 1);
+
+    &__note {
+      &:nth-child(3) {
+        grid-row: 1/2;
+      }
+    }
+  }
+
   &__note {
     width: 28rem;
     height: 32rem;

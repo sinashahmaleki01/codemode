@@ -7,8 +7,17 @@
 .social-box {
   @include flex(1, center, center, column);
 
+  @include respond(phone) {
+    @include flex(2, center, center, row);
+  }
+
   &__link-list {
     @include flex(0, center, center, column);
+
+    @include respond(phone) {
+      @include flex(0, center, center, row);
+    }
+
     position: relative;
     border-radius: 0.6rem;
     background-color: $color-white;
@@ -23,6 +32,14 @@
       border-style: solid;
       border-width: 0 0.8rem 0.8rem 0.8rem;
       border-color: transparent transparent $color-white transparent;
+
+      @include respond(phone) {
+        @include flex(0, center, center, row);
+        top: auto;
+        left: -0.6rem;
+        border-width: 0.8rem 0.8rem 0.8rem 0;
+        border-color: transparent $color-white transparent transparent;
+      }
     }
 
     &:hover .social-box__link {

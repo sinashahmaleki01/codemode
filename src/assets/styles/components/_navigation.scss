@@ -8,6 +8,10 @@
   .navigation__list {
     @include flex(1.6, center, center, column);
 
+    @include respond(phone) {
+      @include flex(1.6, center, center, row);
+    }
+
     .navigation__item {
       position: relative;
       @include flex(0, center, center);
@@ -42,6 +46,12 @@
           transition: opacity 0.25s ease 0.05s, visibility 0.25s ease 0.05s;
           opacity: 0;
           visibility: hidden;
+
+          @include respond(phone) {
+            left: auto;
+            text-align: center;
+            bottom: 6.6rem;
+          }
         }
 
         &::before {
@@ -57,6 +67,14 @@
           transition: opacity 0.25s ease 0.05s, visibility 0.25s ease 0.05s;
           opacity: 0;
           visibility: hidden;
+
+          @include respond(phone) {
+            left: auto;
+            bottom: calc(6.6rem - 0.52rem);
+            border-width: 0.6rem 0.6rem 0 0.6rem;
+            border-color: $color-black-light-2 transparent transparent
+              transparent;
+          }
         }
 
         &:hover {

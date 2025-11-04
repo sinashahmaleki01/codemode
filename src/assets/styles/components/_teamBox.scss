@@ -7,6 +7,10 @@
 .team-box {
   @include flex(0, center, space-around);
 
+  @include respond(tab-port) {
+    @include flex(8, center, center, column);
+  }
+
   &__member {
     width: 24rem;
     padding: 2rem;

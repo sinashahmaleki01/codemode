@@ -7,9 +7,23 @@
 .app {
   height: 100vh;
   padding: 2rem 1rem;
+
   @include grid(2) {
     grid-template-columns: 8rem 1fr;
   }
+
+  @include respond(phone) {
+    padding: 1rem;
+    @include grid(1) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 8rem;
+
+      aside {
+        grid-row: 2/3;
+      }
+    }
+  }
+
   overflow: hidden;
   box-sizing: border-box;
   background-color: $color-black;
